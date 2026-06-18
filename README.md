@@ -52,7 +52,7 @@ I deployed OPNsense as a virtual firewall and configured separate WAN and LAN in
         │      OPNsense      │
         │                    │
         │ WAN: 192.168.83.x  │
-        │ LAN: 192.168.168.1 │
+        │ LAN: 192.168.168.2 │
         └────────────────────┘
                      │
                      ▼
