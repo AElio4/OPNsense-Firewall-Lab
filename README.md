@@ -84,11 +84,11 @@ The firewall was deployed as a virtual machine with separate WAN and LAN interfa
 
 ## Network Services Configuration
 
-The LAN interface was configured with a dedicated subnet and DHCP services were deployed to automatically assign addresses to client systems.
+The LAN interface was configured with a dedicated subnet and DHCP services were deployed to automatically assign addresses to client systems. A range was set outside of DHCP services of something else but I can't remember. It was like the DHCP of VMware itself.
 
 <img src="screenshots/04-opnsense-lan-configuration.png" width="700">
 
-<img src="screenshots/opnsense-dhcp-scope-config.png" width="700">
+<img src="screenshots/05-opnsense-dhcp-scope-config.png" width="700">
 
 ---
 
