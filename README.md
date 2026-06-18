@@ -42,14 +42,23 @@ I deployed OPNsense as a virtual firewall and configured separate WAN and LAN in
 ## Network Diagram
 _To be completed._
 
-## VMware Network Diagram
+## VMware Network Design
+
+The lab was built using two VMware virtual networks. VMnet8 provided WAN connectivity through VMware NAT, while VMnet1 was configured as the isolated LAN network protected by OPNsense.
+
   <img src="screenshots/02-vmware-network-design.png" width="500">
 
 ## Interface Configuration
+
+After deployment, WAN and LAN interfaces were assigned and configured within OPNsense. The LAN network was configured on a separate subnet to allow routing and firewall policy enforcement between networks.
+
   <img src="screenshots/03-opnsense-interface-assignment-success.png" width="600">
   <img src="screenshots/04-opnsense-lan-configuration.png" width="800">
 
 ## Firewall Validation
+
+Firewall rules were created and tested to validate traffic control between networks. Connectivity tests confirmed that traffic was permitted or denied according to the configured policy.
+
   <img src="screenshots/05-opnsense-firewall-rule-google-dns-block.png" width="800">
   <img src="screenshots/06-ubuntu-firewall-rule-validation.png" width="500">
   
