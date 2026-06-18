@@ -127,7 +127,7 @@ A custom firewall rule was created to block DNS traffic to Google's public DNS s
 
 <img src="screenshots/05-opnsense-firewall-rule-order.png" width="700">
 
-<img src="screenshots/opnsense-firewall-block-log-google.png" width="700">
+<img src="screenshots/07-opnsense-firewall-block-log-google.png" width="700">
 
 ---
 
