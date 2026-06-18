@@ -19,8 +19,9 @@ This project documents the deployment of OPNsense as a virtual firewall using VM
 - VMware Workstation Pro
 - OPNsense
 - Windows Host
-- Virtual WAN Network
-- Virtual LAN Network
+- Ubuntu Client VM
+- VMware VMnet8 WAN/NAT Network
+- VMware VMnet1 LAN Network
 
 ## What I Built
 
