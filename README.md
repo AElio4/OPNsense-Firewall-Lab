@@ -110,14 +110,14 @@ Reviewing the client's network configuration revealed that an IP address had bee
 
 Additional investigation focused on VMware networking and DHCP configuration to determine why the client was not receiving complete network information.
 
-<img src="screenshots/troubleshooting/03-vmnet1-dhcp-disabled.png" width="700">
+<img src="screenshots/troubleshooting/03-vmnet1-dhcp-disabled.png" width="500">
 ---
 
 ## Resolution
 
-After correcting the interface configuration and DHCP settings, the Ubuntu client successfully received a valid gateway, DNS server, and domain information from OPNsense.
+After correcting the network configuration, the Ubuntu client successfully received a valid gateway, DNS server, and domain information from OPNsense.
 
-<img src="screenshots/troubleshooting/ubuntu-received-dhcp-from-opnsense.png" width="700">
+<img src="screenshots/troubleshooting/04-ubuntu-received-dhcp-from-opnsense.png" width="700">
 
 ---
 
