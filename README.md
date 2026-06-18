@@ -59,7 +59,7 @@ After deployment, WAN and LAN interfaces were assigned and configured within OPN
 
 Firewall rules were created and tested to validate traffic control between networks. Connectivity tests confirmed that traffic was permitted or denied according to the configured policy.
 
-  <img src="screenshots/05-opnsense-firewall-rule-google-dns-block.png" width="800">
+  <img src="screenshots/05-opnsense-firewall-rule-order.png" width="800">
   <img src="screenshots/06-ubuntu-firewall-rule-validation.png" width="500">
   
 ## Next Steps
