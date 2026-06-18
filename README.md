@@ -40,8 +40,30 @@ I deployed OPNsense as a virtual firewall and configured separate WAN and LAN in
   <img src="screenshots/01-opnsense-dashboard.png" width="800">
 
 ## Network Diagram
-_To be completed._
 
+                 Internet
+                     │
+                     ▼
+              VMware NAT
+               VMnet8
+                     │
+                     ▼
+        ┌────────────────────┐
+        │      OPNsense      │
+        │                    │
+        │ WAN: 192.168.83.x  │
+        │ LAN: 192.168.168.1 │
+        └────────────────────┘
+                     │
+                     ▼
+                VMnet1 LAN
+                     │
+                     ▼
+        ┌────────────────────┐
+        │   Ubuntu Client    │
+        │ 192.168.168.128    │
+        └────────────────────┘
+        
 ## VMware Network Design
 
 The lab was built using two VMware virtual networks. VMnet8 provided WAN connectivity through VMware NAT, while VMnet1 was configured as the isolated LAN network protected by OPNsense.
