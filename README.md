@@ -96,7 +96,7 @@ The LAN interface was configured with a dedicated subnet and DHCP services were 
 
 Following deployment, the Ubuntu client was unable to reach external networks. Initial testing showed that internet-bound traffic could not leave the LAN segment.
 
-<img src="screenshots/troubleshooting/network-is-unreachable.png" width="700">
+<img src="screenshots/troubleshooting/01-ping-host-failed.png" width="700">
 
 ---
 
