@@ -102,16 +102,15 @@ Following deployment, the Ubuntu client was unable to reach external networks. I
 
 ## Investigation
 
-Troubleshooting focused on validating interface assignments, routing information, DHCP configuration, and client network settings.
+Troubleshooting focused on validating network connectivity, DHCP configuration, and client network settings.
 
-Reviewing the Ubuntu routing table revealed that the client was missing a default route, preventing traffic from reaching external networks.
+Initial testing showed that the Ubuntu client successfully received an IP address but was not assigned a default gateway. Without a valid gateway, traffic could not leave the local network segment.
 
-<img src="screenshots/troubleshooting/ubuntu-missing-default-route.png" width="700">
+<img src="screenshots/troubleshooting/ubuntu-dhcp-renewal-missing-gateway.png" width="700">
 
-Further investigation confirmed that DHCP configuration and interface assignments required correction before proper routing could occur.
+Additional investigation included reviewing VMware networking and DHCP configuration to verify that client systems were receiving the correct network information.
 
-<img src="screenshots/troubleshooting/interface-assignment-error.png" width="700">
-
+<img src="screenshots/troubleshooting/vmnet1-dhcp-disabled.png" width="700">
 ---
 
 ## Resolution
