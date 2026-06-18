@@ -39,7 +39,7 @@ This project documents the deployment of OPNsense as a virtual firewall using VM
 
 The completed lab successfully routed traffic between isolated LAN and WAN networks using OPNsense as the primary firewall. DHCP, DNS, routing, and firewall policies were configured and validated through connectivity testing and firewall log analysis.
 
-<img src="screenshots/01-opnsense-dashboard.png" width="800">
+<img src="screenshots/01-opnsense-dashboard.png" width="900">
 
 ---
 
@@ -76,7 +76,7 @@ The completed lab successfully routed traffic between isolated LAN and WAN netwo
 
 The firewall was deployed as a virtual machine with separate WAN and LAN interfaces. VMware NAT networking was used for WAN connectivity while a dedicated host-only network was used for the internal LAN segment.
 
-<img src="screenshots/vmware-hardware-config.png" width="700">
+<img src="screenshots/02-vmware-hardware-config.png" width="600">
 
 <img src="screenshots/03-opnsense-interface-assignment-success.png" width="700">
 
