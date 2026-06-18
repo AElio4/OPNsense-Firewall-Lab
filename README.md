@@ -36,22 +36,23 @@ I deployed OPNsense as a virtual firewall and configured separate WAN and LAN in
 - Virtualization
 - VMware Workstation
 
-## Screenshots
-
-_To be completed._
+## Final Working Environment
+  <img src="screenshots/01-opnsense-dashboard.png" width="800">
 
 ## Network Diagram
-
 _To be completed._
 
-## Troubleshooting & Resolution
+## VMware Network Diagram
+  <img src="screenshots/02-vmware-network-design.png" width="500">
 
-_To be completed._
+## Interface Configuration
+  <img src="screenshots/03-opnsense-interface-assignment-success.png" width="600">
+  <img src="screenshots/04-opnsense-lan-configuration.png" width="800">
 
-## Lessons Learned
-
-_To be completed._
-
+## Firewall Validation
+  <img src="screenshots/05-opnsense-firewall-rule-google-dns-block.png" width="800">
+  <img src="screenshots/06-ubuntu-firewall-rule-validation.png" width="500">
+  
 ## Next Steps
 
 - Configure additional firewall rules
