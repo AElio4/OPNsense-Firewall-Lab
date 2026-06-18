@@ -84,7 +84,7 @@ The firewall was deployed as a virtual machine with separate WAN and LAN interfa
 
 ## Network Services Configuration
 
-The LAN interface was configured with a dedicated subnet and DHCP services were deployed to automatically assign addresses to client systems. A range was set outside of DHCP services of something else but I can't remember. It was like the DHCP of VMware itself.
+The LAN interface was configured with a dedicated subnet and DHCP services were deployed to automatically assign addresses to client systems. A DHCP scope was configured within the LAN subnet while avoiding conflicts with VMware-managed networking and infrastructure addresses.
 
 <img src="screenshots/04-opnsense-lan-configuration.png" width="700">
 
@@ -104,13 +104,13 @@ Following deployment, the Ubuntu client was unable to reach external networks. I
 
 Troubleshooting focused on validating network connectivity, DHCP configuration, and client network settings.
 
-Initial testing showed that the Ubuntu client successfully received an IP address but was not assigned a default gateway. Without a valid gateway, traffic could not leave the local network segment.
+Reviewing the client's network configuration revealed that an IP address had been assigned, but no default gateway was present. Without a valid gateway, traffic could not leave the local network segment.
 
-<img src="screenshots/troubleshooting/ubuntu-dhcp-renewal-missing-gateway.png" width="700">
+<img src="screenshots/troubleshooting/02-ubuntu-dhcp-renewal-missing-gateway.png" width="700">
 
-Additional investigation included reviewing VMware networking and DHCP configuration to verify that client systems were receiving the correct network information.
+Additional investigation focused on VMware networking and DHCP configuration to determine why the client was not receiving complete network information.
 
-<img src="screenshots/troubleshooting/vmnet1-dhcp-disabled.png" width="700">
+<img src="screenshots/troubleshooting/03-vmnet1-dhcp-disabled.png" width="700">
 ---
 
 ## Resolution
